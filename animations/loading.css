@@ -1,0 +1,27 @@
+/* ? Site Loader */
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: var(--tri-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-container {
+  position: relative;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  animation: loading 0.5s linear infinite;
+  display: inline-block;
+}
+
+.lottie-loading {
+  width: 350px;
+  height: 350px;
+}

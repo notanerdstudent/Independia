@@ -1,0 +1,45 @@
+/* ? FONTS */
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Oswald-Regular.ttf)
+}
+
+/* ? BASE CSS */
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --on-primary: ;
+    --on-secondary: ;
+    --text: #F1F1F1 ;
+    --background: #FF781F;
+    --link: #1AB3DE;
+	--deco: #008631;
+	--side: #F1F1F1;
+    --glass: hsl(0 0% 100% / 0.1);
+    --tri-color: linear-gradient(to top, #008631, #009e7d, #00b3b8, #74c3dd, #bad3ec, #cad3f3, #ded3f6, #f3d2f2, #ffb5db, #ff96ae, #ff7f70, #ff781f);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    font-family: 'Oswald', sans-serif;
+	min-height: 100vh;
+    color: var(--text);
+    background-color: var(--background);
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
