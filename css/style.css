@@ -1,45 +1,74 @@
 /* ? FONTS */
 @font-face {
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(../fonts/Oswald-Regular.ttf)
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Oswald-Regular.ttf);
 }
 
 /* ? BASE CSS */
 :root {
-    --primary-color: ;
-    --secondary-color: ;
-    --on-primary: ;
-    --on-secondary: ;
-    --text: #F1F1F1 ;
-    --background: #FF781F;
-    --link: #1AB3DE;
-	--deco: #008631;
-	--side: #F1F1F1;
-    --glass: hsl(0 0% 100% / 0.1);
-    --tri-color: linear-gradient(to top, #008631, #009e7d, #00b3b8, #74c3dd, #bad3ec, #cad3f3, #ded3f6, #f3d2f2, #ffb5db, #ff96ae, #ff7f70, #ff781f);
+  --light-orange: #ff942a;
+  --white: #ffffff;
+  --text: #ff942a;
+  /* --text: #f1f1f1; */
+  --background: #0c0c0c;
+  /* --background: #ff781f; */
+  --link: #1ab3de;
+  --deco: #008631;
+  --side: #f1f1f1;
+  --glass: hsl(0 0% 100% / 0.1);
+  --tri-color: linear-gradient(
+    to top,
+    #008631,
+    #009e7d,
+    #00b3b8,
+    #74c3dd,
+    #bad3ec,
+    #cad3f3,
+    #ded3f6,
+    #f3d2f2,
+    #ffb5db,
+    #ff96ae,
+    #ff7f70,
+    #ff781f
+  );
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-    font-family: 'Oswald', sans-serif;
-	min-height: 100vh;
-    color: var(--text);
-    background-color: var(--background);
-    overflow-x: hidden;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Oswald", sans-serif;
+  min-height: 100vh;
+  color: var(--text);
+  background-color: var(--background);
+  overflow-x: hidden;
+  padding: 10px !important;
 }
 
 .flex {
-    display: flex;
-    gap: var(--gap, 1rem);
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+/* ? Scroll Bar */
+::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--light-orange) !important;
+  border-radius: 2px !important;
 }
