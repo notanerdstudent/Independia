@@ -1,6 +1,6 @@
 a {
   text-decoration: none;
-  color: var(--link) !important;
+  color: var(--link);
   outline: none;
 }
 
@@ -25,6 +25,10 @@ a:focus {
   height: 1.5em;
   margin: 0 auto;
   fill: currentColor;
+}
+
+main {
+  padding: 10px;
 }
 
 .slideshow {

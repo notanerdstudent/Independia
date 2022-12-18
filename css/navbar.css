@@ -1,5 +1,5 @@
 .logo {
-  margin: 1rem;
+  width: 18rem;
 }
 
 .primary-header {
@@ -11,6 +11,7 @@
   top: 0;
   width: 100%;
   background: var(--background);
+  padding: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid white;
 }
@@ -38,6 +39,9 @@
 }
 
 @media (max-width: 750px) {
+  a {
+    color: var(--white) !important;
+  }
   .primary-navigation {
     --gap: 2em;
     z-index: 2500;
@@ -63,7 +67,6 @@
     border: 0;
     width: 1.5rem;
     aspect-ratio: 1;
-    top: 2rem;
     right: 2rem;
   }
 

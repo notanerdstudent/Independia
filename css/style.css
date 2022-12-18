@@ -51,12 +51,6 @@ body {
   color: var(--text);
   background-color: var(--background);
   overflow-x: hidden;
-  padding: 10px !important;
-}
-
-.flex {
-  display: flex;
-  gap: var(--gap, 1rem);
 }
 
 /* ? Scroll Bar */
@@ -65,10 +59,23 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--background) !important;
+  background: var(rgba(0, 0, 0, 0.005)) !important;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--light-orange) !important;
   border-radius: 2px !important;
+}
+
+/* ? UTILITIES */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.title {
+  margin: 1.5em 0;
+  text-align: center;
+  text-decoration: underline;
 }

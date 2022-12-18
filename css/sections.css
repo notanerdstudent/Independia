@@ -1,0 +1,9 @@
+#post-independence {
+  height: calc(100vh - 5rem);
+  background-color: var(--white);
+}
+
+#india-today {
+  height: calc(100vh - 7rem);
+  background-color: var(--background);
+}
