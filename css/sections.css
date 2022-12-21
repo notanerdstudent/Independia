@@ -1,7 +1,64 @@
 #post-independence {
-  height: calc(100vh - 7rem);
+  min-height: calc(100vh - 7rem);
   padding-top: 1rem;
   background-color: var(--white);
+}
+
+.main-post-ind {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  min-height: 90vh;
+  margin-top: 20px;
+}
+
+.container-post-ind {
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container-post-ind .card-post-ind {
+  position: relative;
+  max-width: 450px;
+  background-color: var(--white);
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 1px -3px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.container-post-ind .card-post-ind .imgBx {
+  max-width: 150px;
+  flex: 0 0 150px;
+}
+
+.container-post-ind .card-post-ind .imgBx img {
+  max-width: 100%;
+}
+
+.container-post-ind .card-post-ind .content-post-ind {
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .container-post-ind {
+    flex-direction: column;
+  }
+  .container-post-ind .card-post-ind {
+    flex-direction: column;
+    max-width: 350px;
+  }
+  .container-post-ind .card-post-ind .imgBx {
+    max-width: 100%;
+  }
+  .container-post-ind .card-post-ind .content-post-ind {
+    margin-left: 0px;
+  }
 }
 
 /* * India Today Section */

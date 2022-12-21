@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/sections.css" />
 
     <!-- ? Libraries -->
+    <link rel="stylesheet" href="./libraries/aos/aos.css" />
     <script src="./libraries/lottie/lottie-player.js"></script>
     <script src="./libraries/jquery/jquery-3.6.2.min.js"></script>
     <script src="./libraries/vanilla-js/vanilla-tilt.js"></script>
@@ -141,7 +142,12 @@
         <!-- ! Slideshow -->
         <div class="slideshow">
           <div class="slideshow__deco"></div>
-          <div class="slide">
+          <div
+            class="slide"
+            data-aos="fade-up"
+            data-aos-delay="2200"
+            data-aos-once="true"
+          >
             <div class="slide__img-wrap">
               <div
                 class="slide__img"
@@ -154,7 +160,12 @@
               <h3 class="slide__title">Revolt of 1857</h3>
             </div>
           </div>
-          <div class="slide">
+          <div
+            class="slide"
+            data-aos="fade-left"
+            data-aos-delay="2200"
+            data-aos-once="true"
+          >
             <div class="slide__img-wrap">
               <div
                 class="slide__img"
@@ -184,7 +195,12 @@
               <h4 class="slide__subtitle">The only guide is your heart</h4>
             </div>
           </div>
-          <div class="slide">
+          <div
+            class="slide"
+            data-aos="fade-right"
+            data-aos-delay="2200"
+            data-aos-once="true"
+          >
             <div class="slide__img-wrap">
               <div
                 class="slide__img"
@@ -320,6 +336,62 @@
 
       <div id="post-independence">
         <h1 class="title-b">India Post Independence</h1>
+        <div class="main-post-ind">
+          <div class="container-post-ind">
+            <div class="card-post-ind">
+              <div class="imgBx">
+                <img src="./assets/images/1.jpg" alt="" />
+              </div>
+              <div class="content-post-ind">
+                <h2>1947</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Mollitia error eligendi dolor quibusdam inventore, rerum
+                  consequatur atque molestias illo ullam.
+                </p>
+              </div>
+            </div>
+            <div class="card-post-ind">
+              <div class="imgBx">
+                <img src="./assets/images/2.jpg" alt="" />
+              </div>
+              <div class="content-post-ind">
+                <h2>1951</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Mollitia error eligendi dolor quibusdam inventore, rerum
+                  consequatur atque molestias illo ullam.
+                </p>
+              </div>
+            </div>
+            <div class="card-post-ind">
+              <div class="imgBx">
+                <img src="./assets/images/3.jpg" alt="" />
+              </div>
+              <div class="content-post-ind">
+                <h2>1992</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Mollitia error eligendi dolor quibusdam inventore, rerum
+                  consequatur atque molestias illo ullam.
+                </p>
+              </div>
+            </div>
+            <div class="card-post-ind">
+              <div class="imgBx">
+                <img src="./assets/images/4.jpg" alt="" />
+              </div>
+              <div class="content-post-ind">
+                <h2>1992</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Mollitia error eligendi dolor quibusdam inventore, rerum
+                  consequatur atque molestias illo ullam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="arrow">
@@ -342,7 +414,7 @@
         </div>
         <div class="india-today-content">
           <div class="container-card">
-            <div class="card-glass">
+            <div class="card-glass" data-aos="zoom-in-right">
               <div class="content-card">
                 <h2>01</h2>
                 <h3>Card One</h3>
@@ -352,7 +424,7 @@
                 </p>
               </div>
             </div>
-            <div class="card-glass">
+            <div class="card-glass" data-aos="zoom-out-up">
               <div class="content-card">
                 <h2>02</h2>
                 <h3>Card Two</h3>
@@ -362,7 +434,7 @@
                 </p>
               </div>
             </div>
-            <div class="card-glass">
+            <div class="card-glass" data-aos="zoom-in-left">
               <div class="content-card">
                 <h2>03</h2>
                 <h3>Card Three</h3>
@@ -395,6 +467,7 @@
     <script src="./animations/js/tilt.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/nav.js"></script>
+    <script src="./libraries/aos/aos.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
