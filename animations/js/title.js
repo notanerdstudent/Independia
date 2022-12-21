@@ -1,3 +1,4 @@
+// ? Move Title Animation
 var msg = document.title;
 var speed = 500;
 var endChar = "... ";

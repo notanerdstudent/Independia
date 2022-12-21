@@ -4,6 +4,8 @@
   background-color: var(--white);
 }
 
+/* * India Today Section */
+
 #india-today {
   min-height: calc(100vh - 8rem);
   background-color: var(--background);
@@ -14,7 +16,7 @@
   margin: 0.5em 0;
 }
 
-.india-today-content {
+#india-today .india-today-content {
   display: flex;
   justify-content: center;
   align-items: center;

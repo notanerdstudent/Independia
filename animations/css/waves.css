@@ -10,7 +10,7 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 2.5em;
+  height: 3em;
   transform: rotateY(180deg);
 }
 
