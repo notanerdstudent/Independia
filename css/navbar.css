@@ -62,7 +62,7 @@
     position: absolute;
     cursor: pointer;
     z-index: 9999;
-    background: url(../assets/images/menu.svg);
+    background: url(../assets/svg/menu.svg);
     background-repeat: no-repeat;
     border: 0;
     width: 1.5rem;
@@ -71,7 +71,7 @@
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
-    background-image: url(../assets/images/close.svg);
+    background-image: url(../assets/svg/close.svg);
   }
 }
 
