@@ -1,4 +1,4 @@
-.custom-shape-divider-top-1671358988 {
+.arrow {
   top: 0;
   left: 0;
   width: 100%;
@@ -6,13 +6,13 @@
   line-height: 0;
 }
 
-.custom-shape-divider-top-1671358988 svg {
+.arrow svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
   height: 50px;
 }
 
-.custom-shape-divider-top-1671358988 .shape-fill {
+.arrow .shape-fill {
   fill: #ffffff;
 }

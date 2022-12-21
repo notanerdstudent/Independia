@@ -262,9 +262,6 @@ main {
 }
 
 @media screen and (min-width: 750px) {
-  body {
-    padding: 0;
-  }
   .slideshow {
     height: calc(100vh - 4rem);
     grid-template-columns: 27% 27% 27%;

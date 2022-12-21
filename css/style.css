@@ -9,12 +9,9 @@
 
 /* ? BASE CSS */
 :root {
-  --light-orange: #ff942a;
   --white: #ffffff;
   --text: #ff942a;
-  /* --text: #f1f1f1; */
   --background: #0c0c0c;
-  /* --background: #ff781f; */
   --link: #1ab3de;
   --deco: #008631;
   --side: #f1f1f1;
@@ -40,15 +37,18 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Oswald", sans-serif;
   min-height: 100vh;
-  color: var(--text);
   background-color: var(--background);
   overflow-x: hidden;
 }
@@ -63,7 +63,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--light-orange) !important;
+  background: var(--text) !important;
   border-radius: 2px !important;
 }
 
@@ -75,7 +75,13 @@ body {
 }
 
 .title {
+  color: var(--text);
   margin: 1.5em 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.title-b {
   text-align: center;
   text-decoration: underline;
 }
