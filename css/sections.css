@@ -108,14 +108,13 @@
 #india-today .container-card .card-glass .content-card {
   padding: 20px;
   text-align: center;
-  transform: translateY(100px);
-  opacity: 0;
+  transform: translateY(-25px);
+  opacity: 0.8;
   transition: 0.5s;
 }
 
 #india-today .container-card .card-glass:hover .content-card {
   transform: translateY(0px);
-  opacity: 0.8;
 }
 
 #india-today .container-card .card-glass .content-card h2 {
@@ -137,4 +136,10 @@
   font-size: 1em;
   color: #fff;
   font-weight: 300;
+}
+
+@media (max-width: 1020px) {
+  #india-today .container-card .card-glass .content-card {
+    transform: translateY(0px);
+  }
 }
