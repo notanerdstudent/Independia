@@ -16,3 +16,8 @@ AOS.init({
   easing: "ease", // default easing for AOS animations
   mirror: false, // whether elements should animate out while scrolling past them
 });
+
+// ? Year
+const year = document.getElementById("year-copy");
+
+year.innerHTML = new Date().getFullYear();
