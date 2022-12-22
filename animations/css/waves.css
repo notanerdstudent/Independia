@@ -1,4 +1,6 @@
 .waves {
+  position: relative;
+  bottom: -2px;
   width: 100%;
   overflow: hidden;
   line-height: 0;
