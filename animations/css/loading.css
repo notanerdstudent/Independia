@@ -9,7 +9,7 @@
   background: hsl(0 0% 100% / 0.1);
   display: flex;
   justify-content: center;
-  backdrop-filter: blur(2rem);
+  backdrop-filter: blur(2em);
   align-items: center;
 }
 

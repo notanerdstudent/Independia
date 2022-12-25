@@ -1,18 +1,18 @@
 /* ? FONTS */
 @font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url(../fonts/Oswald-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Fjalla One";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../fonts/FjallaOne-Regular.ttf);
 }
 
 /* ? BASE CSS */
@@ -45,7 +45,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 html {
@@ -71,7 +71,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--text) !important;
+  background: var(--link) !important;
   border-radius: 2px !important;
 }
 
@@ -79,11 +79,11 @@ body {
 
 .flex {
   display: flex;
-  gap: var(--gap, 1rem);
+  gap: var(--gap, 1em);
 }
 
 .title {
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Oswald", sans-serif;
   color: var(--text);
   margin: 1.5em 0;
   text-align: center;
@@ -91,7 +91,14 @@ body {
 }
 
 .title-b {
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Oswald", sans-serif;
   text-align: center;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    margin: 0.75em 0;
+    font-size: 1.5rem;
+  }
 }
