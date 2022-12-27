@@ -37,6 +37,7 @@ main {
   position: relative;
   overflow: hidden;
   margin: 0;
+  height: 100vh;
   width: 100%;
   height: calc(100vh - 10em);
   display: grid;
@@ -318,13 +319,13 @@ main {
     font-size: 2em;
   }
   .content__title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .content__text {
     font-size: 0.95rem;
     column-count: 2;
-    column-gap: 2em;
+    column-gap: 1.7rem;
     max-width: 600px;
     text-align: justify;
   }
@@ -341,10 +342,19 @@ main {
   .content__text {
     font-size: 0.85rem;
   }
-  .content__item {
-    width: 55.5%;
-  }
   .content__close {
     left: 37%;
+  }
+}
+
+@media (max-device-height: 650px) and (min-width: 770px) and (max-width: 910px) {
+  .content__title {
+    font-size: 1.5rem;
+  }
+  .content__text {
+    font-size: 0.8rem;
+  }
+  .content__item {
+    width: 55%;
   }
 }
