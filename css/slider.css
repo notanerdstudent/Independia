@@ -37,9 +37,8 @@ main {
   position: relative;
   overflow: hidden;
   margin: 0;
-  height: 100vh;
   width: 100%;
-  height: calc(100vh - 10em);
+  height: calc(100% - 10em);
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-column-gap: 0.5%;
@@ -77,9 +76,9 @@ main {
 
 .slideshow__deco {
   grid-area: slide;
-  background: #fff;
+  background: var(--white);
   width: 100%;
-  height: 100%;
+  height: 80%;
   align-self: center;
   position: relative;
   margin: -40px 0 0 0;
@@ -187,7 +186,6 @@ main {
 
 .content {
   font-family: "Libre Baskerville", serif;
-  /* font-weight: 700; */
   position: absolute;
   top: 10em;
   left: 0;
@@ -262,8 +260,7 @@ main {
 
 @media screen and (min-width: 750px) {
   .slideshow {
-    height: auto !important;
-    padding-bottom: 20px;
+    height: calc(100% - 4em);
     grid-template-columns: 27% 27% 27%;
     grid-column-gap: 9.5%;
   }
@@ -301,6 +298,7 @@ main {
     z-index: 1000;
   }
   .content {
+    /* top: 0; */
     height: 100%;
   }
   .content__item {
@@ -315,7 +313,7 @@ main {
   }
   .content__number {
     position: absolute;
-    top: 5rem;
+    top: calc(10vh + 1em);
     right: 0;
     font-size: 2em;
   }
@@ -324,7 +322,7 @@ main {
   }
 
   .content__text {
-    font-size: 0.95em;
+    font-size: 0.95rem;
     column-count: 2;
     column-gap: 2em;
     max-width: 600px;
@@ -332,8 +330,21 @@ main {
   }
 }
 
-@media screen and (max-width: 855px) {
-  .slideshow__deco {
-    height: 100%;
+@media screen and (max-width: 976px) {
+  .slideshow {
+    height: calc(100% - 7em);
+  }
+
+  .content__title {
+    font-size: 2rem;
+  }
+  .content__text {
+    font-size: 0.85rem;
+  }
+  .content__item {
+    width: 55.5%;
+  }
+  .content__close {
+    left: 37%;
   }
 }
