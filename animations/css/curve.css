@@ -1,19 +1,19 @@
-.arrow {
+.curve {
   position: relative;
-  top: -2px;
+  top: -5px;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
 }
 
-.arrow svg {
+.curve svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 55px;
+  height: 100px;
 }
 
-.arrow .shape-fill {
-  fill: #ffffff;
+.curve .shape-fill {
+  fill: #011627;
 }

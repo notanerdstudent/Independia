@@ -15,6 +15,22 @@
   src: url(../fonts/Oswald-Regular.ttf);
 }
 
+@font-face {
+  font-family: "ESL Legend";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/ESLLegend-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
 /* ? BASE CSS */
 :root {
   --white: #ffffff;
@@ -22,6 +38,7 @@
   --background: #0c0c0c;
   --link: #1ab3de;
   --deco: #00a038;
+  --timeline: #4da6ba;
   --side: #f1f1f1;
   --glass: hsl(0 0% 100% / 0.1);
   --tri-color: linear-gradient(
@@ -45,20 +62,20 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Playfair Display", serif;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   background-color: var(--background);
-  overflow-x: hidden;
+  overflow-x: clip;
+  font-family: "Playfair Display", serif;
 }
 
 /* ? Scroll Bar */
@@ -90,9 +107,10 @@ body {
   text-decoration: underline;
 }
 
-.title-b {
+.title-y {
   font-family: "Oswald", sans-serif;
   text-align: center;
+  color: #ff9f1c;
   text-decoration: underline;
 }
 
