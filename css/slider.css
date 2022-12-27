@@ -38,9 +38,9 @@ main {
   overflow: hidden;
   margin: 0;
   width: 100%;
-  height: calc(100% - 10em);
+  height: calc(100vh - 10em);
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 30% 40% 30%;
   grid-column-gap: 0.5%;
   grid-template-rows: 100%;
   grid-template-areas: "... slide ...";
@@ -260,7 +260,7 @@ main {
 
 @media screen and (min-width: 750px) {
   .slideshow {
-    height: calc(100% - 4em);
+    height: calc(100vh - 4em);
     grid-template-columns: 27% 27% 27%;
     grid-column-gap: 9.5%;
   }
@@ -332,7 +332,7 @@ main {
 
 @media screen and (max-width: 976px) {
   .slideshow {
-    height: calc(100% - 7em);
+    height: calc(100vh - 7em);
   }
 
   .content__title {
