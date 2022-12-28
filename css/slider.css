@@ -347,7 +347,7 @@ main {
   }
 }
 
-@media (max-device-height: 650px) and (min-width: 770px) and (max-width: 910px) {
+@media (max-device-height: 650px) and (min-width: 765px) and (max-width: 910px) {
   .content__title {
     font-size: 1.5rem;
   }

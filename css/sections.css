@@ -126,7 +126,7 @@
 .card-image .card-img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .name {
@@ -214,6 +214,7 @@
 
 .state-view .preview img {
   height: 30em;
+  width: 100%;
 }
 
 .state-view .preview .fa-times {
