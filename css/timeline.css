@@ -169,6 +169,21 @@
   color: var(--a);
 }
 
+/* ? Read More */
+.read-more-btn {
+  color: var(--text);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.read-more-text {
+  display: none;
+}
+
+.show-read {
+  display: inline;
+}
+
 @media only screen and (max-width: 979px) {
   .ag-timeline_line {
     left: 30px;
