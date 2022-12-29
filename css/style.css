@@ -6,7 +6,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/ESLLegend-Regular.ttf);
+  src: url(../fonts/ESLLegend-Regular.woff) format("woff");
 }
 
 /* ? BASE CSS */
