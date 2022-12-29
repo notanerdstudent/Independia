@@ -92,6 +92,12 @@ body {
   text-decoration: underline;
 }
 
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
 @media screen and (max-width: 768px) {
   .title {
     margin: 0.75em 0;
