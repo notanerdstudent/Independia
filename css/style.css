@@ -45,6 +45,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: clip;
+  height: 100%;
 }
 
 body {
@@ -54,6 +55,7 @@ body {
   background-color: var(--background);
   overflow-x: clip;
   font-family: "Playfair Display", serif;
+  height: 100%;
 }
 
 /* ? Scroll Bar */
@@ -93,7 +95,7 @@ body {
 }
 
 #particles-js {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: absolute;
 }

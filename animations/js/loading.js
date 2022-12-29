@@ -1,6 +1,6 @@
 $(window).on("load", function () {
-  $(".loader-wrapper").delay(2000).fadeOut("slow");
+  $(".loader-wrapper").delay(1500).fadeOut("slow");
   setTimeout(() => {
     $(".slide").removeAttr("data-aos");
-  }, 3000);
+  }, 2500);
 });

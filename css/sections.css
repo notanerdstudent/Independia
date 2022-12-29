@@ -10,6 +10,7 @@
   align-items: baseline;
   min-height: 90vh;
   margin-top: 20px;
+  display: flex;
 }
 
 .container-post-ind {
