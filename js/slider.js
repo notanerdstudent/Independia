@@ -304,6 +304,7 @@
         rotationZ: this.transforms[pos].rotation,
       });
     }
+
     // Sets it as current.
     setCurrent(isContentOpen) {
       this.isCurrent = true;
@@ -357,6 +358,7 @@
     // Moves a slide to a specific position defined in settings.position.
     // Also, moves it from position settings.from and if we need to reset the image scale when moving the slide then settings.resetImageScale should be true.
     moveToPosition(settings) {
+      this.DOM.img.classList.add("visible");
       return new Promise((resolve, reject) => {
         /*
                         Moves the slide to a specific position:
@@ -398,6 +400,10 @@
             ease: Power4.easeInOut,
             scale: 1,
           });
+          var width = window.innerWidth > 0 ? window.innerWidth : screen.width;
+          if (width < 765) {
+            this.DOM.img.classList.remove("visible");
+          }
         }
       });
     }
@@ -449,6 +455,7 @@
     }
     show() {
       this.DOM.el.classList.add("content__item--current");
+      this.DOM.el.setAttribute("id", "content__item--current");
 
       TweenMax.staggerTo(
         [
@@ -471,6 +478,7 @@
     }
     hide() {
       this.DOM.el.classList.remove("content__item--current");
+      this.DOM.el.removeAttribute("id", "content__item--current");
 
       TweenMax.staggerTo(
         [

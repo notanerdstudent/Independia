@@ -81,17 +81,10 @@ body {
 
 .title {
   font-family: "Oswald", sans-serif;
-  color: var(--text);
   margin: 1.5em 0;
   text-align: center;
   text-decoration: underline;
-}
-
-.title-y {
-  font-family: "Oswald", sans-serif;
-  text-align: center;
   color: #ff9f1c;
-  text-decoration: underline;
 }
 
 #particles-js {

@@ -76,7 +76,6 @@
 /* * India Today Section */
 
 #india-today {
-  min-height: calc(100vh - 7rem);
   margin-bottom: 3rem;
   background-color: var(--background);
   color: var(--white);

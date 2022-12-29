@@ -1,5 +1,1 @@
-particlesJS.load(
-  "particles-js",
-  "/animations/js/particles.json",
-  function () {}
-);
+particlesJS.load("particles-js", "/assets/json/particles.json", function () {});
